@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="it">
   <head>
-    <title>Greeting</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es.02 - Greetings | PHP Lab</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
+  <main class="page-card">
+  <a class="back-link" href="../index.html">← Torna al PHP Lab</a>
+  <p class="eyebrow">Es.02 · PHP Lab</p>
+  <h1>Greetings</h1>
+  <section class="greeting-result">
   <?php
   //Timezone and format
     $today = new DateTime("now", new DateTimeZone("Europe/Rome"));
@@ -37,16 +45,18 @@
       $browser = "Safari";
     }
   ?>
-//Greet
-  <p><?php echo $greet . " " . $n; ?>, benvenuto nella mia prima pagina PHP</p>
-//Browser
+<!--Greet-->
+  <p class="greeting"><?php echo $greet . " " . $n; ?>, benvenuto nella mia prima pagina PHP</p>
+<!--Browser-->
   <?php
     if ($browser == "non riconosciuto") {
-      echo "<p>Ma che cazzo di browser stai usando bro...</p>";
+      echo "<p>Browser non riconosciuto.</p>";
     } else {
-      echo "<p>Stai usando il browser " . $browser . "</p>";
+      echo "<p class=\"browser-info\">Stai usando il browser " . $browser . "</p>";
     }
   ?>
+  </section>
+  </main>
 
   </body>
 </html>

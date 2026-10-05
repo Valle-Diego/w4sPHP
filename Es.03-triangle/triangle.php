@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="it">
     <head>
-        <title>Triangles</title>
-        <style>
-            body {font-family: monospace;}
-        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Es.03 - Triangle | PHP Lab</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
 
-        <?php
+        <main class="page-card">
+        <a class="back-link" href="../index.html">← Torna al PHP Lab</a>
+        <p class="eyebrow">Es.03 · PHP Lab</p>
+        <h1>Triangoli di asterischi</h1>
+        <p class="intro">Quattro forme costruite con cicli PHP.</p>
+        <div class="triangle-output"><?php
             echo "(a)<br>";
 
             for ($i = 1; $i <= 10; $i++) {
@@ -50,7 +55,8 @@
                 }
                 echo '<br>';
             }
-        ?>
+        ?></div>
+        </main>
 
     </body>
 </html>
