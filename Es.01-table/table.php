@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html lang="it">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Es.01 - Tabella | PHP Lab</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pitagoric Table</title>
   </head>
   <body>
-    <main class="page-card">
-    <a class="back-link" href="../index.html">← Torna al PHP Lab</a>
-    <p class="eyebrow">Es.01 · PHP Lab</p>
-    <h1>Tabella pitagorica</h1>
-    <p class="intro">Tabella delle moltiplicazioni da 1 a 10, generata con PHP.</p>
+    <h1>Generazione dinamica di una tabella html</h1>
 <!--table Border-->
     <table border="1">
       <?php
@@ -25,6 +18,5 @@
 	}
       ?>
     </table>
-    </main>
   </body>
 </html>
