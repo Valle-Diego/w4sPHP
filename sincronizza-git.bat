@@ -20,9 +20,13 @@ if "%COMMIT_MSG%"=="" (
 git add .
 if errorlevel 1 goto :error
 
+git diff --cached --quiet
+if not errorlevel 1 goto :push
+
 git commit -m "%COMMIT_MSG%"
 if errorlevel 1 goto :error
 
+:push
 git push
 if errorlevel 1 goto :error
 

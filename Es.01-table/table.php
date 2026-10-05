@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
-    <title>Esempio ciclo for</title>
+    <title>Pitagoric Table</title>
   </head>
   <body>
     <h1>Generazione dinamica di una tabella html</h1>
-
+//table Border
     <table border="1">
       <?php
+      //for Table builder
         for ($i = 1; $i <= 10; $i++) {
     	  echo "<tr>";
 	  for ($j = 1; $j <= 10; $j++) {

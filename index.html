@@ -1,46 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIEGO VALLE - Classe 5EINF</title>
+    <meta name="theme-color" content="#10151d">
+    <title>PHP Lab | Diego Valle</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Benvenuto/a DIEGO VALLE!</h1>
-    <p>Questa è la tua area web personale.</p>
-    <p>Classe: 5EINF</p>
-    <p>Username: valle.diego</p>
-    
-    <div class="example-section">
-        <h2>🛠️ Strumenti Disponibili</h2>
-        <ul>
-            <li><a href="adminer.php" target="_blank">🗄️ Adminer Personale</a></li>
-            <li><a href="/adminer.php" target="_blank">🌐 Adminer Globale</a></li>
-            <li><a href="info.php" target="_blank">ℹ️ Informazioni PHP</a></li>
-            <li><a href="style.css" target="_blank">📄 Foglio CSS</a></li>
-            <li><a href="script.js" target="_blank">🔧 JavaScript</a></li>
-        </ul>
-    </div>
-    
-    <div class="example-section">
-        <h2>📁 Tipi di File Supportati</h2>
-        <p>Il tuo sito web supporta tutti questi tipi di file:</p>
-        <ul>
-            <li>📄 HTML (.html) - Pagine web</li>
-            <li>🐘 PHP (.php) - Scripting server-side</li>
-            <li>🎨 CSS (.css) - Fogli di stile</li>
-            <li>⚡ JavaScript (.js) - Scripting client-side</li>
-            <li>🖼️ Immagini (.jpg, .png, .gif, .svg)</li>
-            <li>📋 Documenti (.txt, .pdf)</li>
-            <li>⚙️ Configurazioni (.xml, .json)</li>
-        </ul>
-    </div>
-    
-    <hr>
-    <p>Puoi modificare questo file per creare il tuo sito web.</p>
-    <p>File location: ~/www/index.html</p>
-    
+    <header class="topbar">
+        <a class="brand" href="index.html" aria-label="PHP Lab, home">
+            <span class="brand-mark">&lt;?&gt;</span>
+            <span>PHP <strong>Lab</strong></span>
+        </a>
+        <nav aria-label="Navigazione principale">
+            <a class="active" href="#esercizi">Esercizi</a>
+            <a href="#strumenti">Strumenti</a>
+            <a href="info.php">Info PHP</a>
+        </nav>
+        <span class="class-tag">5EINF</span>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> Area di lavoro · Informatica</p>
+                <h1>Benvenuto nel<br><span>PHP Lab.</span></h1>
+                <p class="intro">Uno spazio per raccogliere gli esercizi e i progetti PHP. Scegli un lavoro per aprirlo.</p>
+                <a class="primary-link" href="#esercizi">Esplora gli esercizi <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+                <div class="code-card"><span class="code-dots">● ● ●</span><code><i>&lt;?php</i><br><b>$studente</b> = <em>"Diego"</em>;<br><b>echo</b> <em>"Ciao, "</em> . $studente;<br><i>?&gt;</i></code></div>
+                <span class="float-tag">{ codice }</span>
+                <span class="float-php">php</span>
+            </div>
+        </section>
+
+        <section class="section" id="esercizi">
+            <div class="section-heading">
+                <div><p class="eyebrow">Raccolta</p><h2>I miei esercizi</h2></div>
+                <span class="count"><span id="project-count">03</span> progetti</span>
+            </div>
+            <div class="project-grid">
+                <a class="project-card" href="https://w4s.filippobilardo.it/~valle.diego/table.php">
+                    <div class="card-top"><span class="project-icon purple">▦</span><span class="project-number">01</span></div>
+                    <p class="project-type">PHP · Tabelle</p><h3>Tabella</h3>
+                    <p class="project-description">Creazione e visualizzazione di una tabella con PHP.</p>
+                    <span class="card-link">Apri esercizio <span aria-hidden="true">↗</span></span>
+                </a>
+                <a class="project-card" href="https://w4s.filippobilardo.it/~valle.diego/greetings.php">
+                    <div class="card-top"><span class="project-icon orange">✳</span><span class="project-number">02</span></div>
+                    <p class="project-type">PHP · Input e output</p><h3>Greetings</h3>
+                    <p class="project-description">Un semplice esercizio per salutare l'utente.</p>
+                    <span class="card-link">Apri esercizio <span aria-hidden="true">↗</span></span>
+                </a>
+                <a class="project-card" href="https://w4s.filippobilardo.it/~valle.diego/triangle.php">
+                    <div class="card-top"><span class="project-icon green">△</span><span class="project-number">03</span></div>
+                    <p class="project-type">PHP · Geometria</p><h3>Triangle</h3>
+                    <p class="project-description">Calcoli e logica PHP applicati al triangolo.</p>
+                    <span class="card-link">Apri esercizio <span aria-hidden="true">↗</span></span>
+                </a>
+            </div>
+            <p class="empty-state" id="empty-state" hidden>Nessun esercizio corrisponde alla ricerca.</p>
+        </section>
+
+        <section class="tools-section" id="strumenti">
+            <div><p class="eyebrow">Risorse rapide</p><h2>Strumenti</h2></div>
+            <div class="tool-links">
+                <a href="adminer.php" target="_blank" rel="noopener"><span>▤</span><span><strong>Adminer</strong><small>Gestione database</small></span><b>↗</b></a>
+                <a href="info.php"><span>ⓘ</span><span><strong>Informazioni PHP</strong><small>Dettagli dell'ambiente</small></span><b>↗</b></a>
+            </div>
+        </section>
+    </main>
+
+    <footer><a class="brand footer-brand" href="index.html"><span class="brand-mark">&lt;?&gt;</span><span>PHP <strong>Lab</strong></span></a><span>Diego Valle · 5EINF</span><span id="current-year"></span></footer>
     <script src="script.js"></script>
 </body>
 </html>
