@@ -8,7 +8,7 @@
   </head>
   <body>
     <main class="page-card">
-      <a class="back-link" href="../index.html">← Torna al PHP Lab</a>
+      <a class="back-link" href="../">← Torna al PHP Lab</a>
       <h1>Generazione dinamica di una tabella html</h1>
       <!--table Border-->
       <div class="table-scroll">

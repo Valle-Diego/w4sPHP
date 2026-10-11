@@ -9,7 +9,7 @@
   <body>
 
   <main class="page-card">
-  <a class="back-link" href="../index.html">← Torna al PHP Lab</a>
+  <a class="back-link" href="../">← Torna al PHP Lab</a>
   <p class="eyebrow">Es.02 · PHP Lab</p>
   <h1>Greetings</h1>
   <section class="greeting-result">

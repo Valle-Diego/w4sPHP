@@ -9,7 +9,7 @@
     <body>
 
         <main class="page-card">
-        <a class="back-link" href="../index.html">← Torna al PHP Lab</a>
+        <a class="back-link" href="../">← Torna al PHP Lab</a>
         <p class="eyebrow">Es.03 · PHP Lab</p>
         <h1>Triangoli di asterischi</h1>
         <p class="intro">Quattro forme costruite con cicli PHP.</p>
