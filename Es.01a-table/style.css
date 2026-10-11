@@ -1,0 +1,99 @@
+:root {
+    color-scheme: dark;
+    --bg: #10151d;
+    --panel: #171e28;
+    --line: #344250;
+    --text: #f2f5f9;
+    --muted: #b1bdca;
+    --accent: #4f9b68;
+    --accent-light: #a4d9b2;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 48px 20px;
+    background: radial-gradient(ellipse at 75% 0%, #1c3027 0, transparent 42%), var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', Arial, sans-serif;
+}
+
+.page-card {
+    width: min(880px, 100%);
+    margin: 0 auto;
+    padding: clamp(24px, 5vw, 48px);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--panel);
+    box-shadow: 0 24px 70px #0004;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 38px;
+    color: var(--accent-light);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.back-link:hover { 
+    color: #c7ebd0; 
+    text-decoration: underline; 
+}
+
+.eyebrow { 
+    margin: 0 0 10px;
+    color: var(--accent-light); 
+    font: 12px 'DM Mono', Consolas, monospace; 
+    letter-spacing: .1em; 
+    text-transform: uppercase; 
+}
+
+h1 { 
+    margin: 0 0 28px;
+    font: 600 clamp(28px, 5vw, 40px)/1.15 'Space Grotesk', Arial, sans-serif; letter-spacing: -1.2px;
+}
+
+.table-scroll { 
+    overflow-x: auto; 
+    padding-bottom: 5px; 
+}
+
+table { 
+    width: 100%;
+    min-width: 570px; 
+    border-collapse: separate;
+    border-spacing: 4px;
+    font: 14px 'DM Mono', Consolas, monospace; 
+}
+
+td { 
+    width: 10%;
+    height: 42px;
+    padding: 8px 5px; 
+    border: 1px solid var(--line);
+    border-radius: 6px; 
+    background: #111820; color: #f2f5f9; 
+    text-align: center; 
+}
+
+tr:nth-child(even) td { background: #1c2731; }
+
+td:hover { 
+    background: #294a35;
+    border-color: #6eaf7e; 
+}
+
+@media (max-width: 520px) {
+    body { padding: 20px 10px; }
+    .page-card { padding: 24px 16px; }
+    .back-link { margin-bottom: 30px; }
+    table { 
+        min-width: 540px; 
+        border-spacing: 3px; 
+        font-size: 13px; 
+    }
+    td { height: 40px; }
+}

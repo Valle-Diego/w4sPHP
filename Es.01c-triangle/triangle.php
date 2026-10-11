@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Es.03 - Triangle | PHP Lab</title>
+        <title>Es.01c - Triangle | PHP Lab</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>

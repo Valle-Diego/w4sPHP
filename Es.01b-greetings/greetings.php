@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Es.02 - Greetings | PHP Lab</title>
+    <title>Es.01b - Greetings | PHP Lab</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -28,7 +28,7 @@
       $greet = "Buonanotte";
     }
   //Server detection
-    $userAgent = $_SERVER["HTTP_USER_AGENT"];
+    $userAgent = $_SERVER["HTTP_USER_AGENT"] ?? "";
     $browser = "non riconosciuto";
   //Browser selection
     if (strpos($userAgent, "Edg/") !== false) {

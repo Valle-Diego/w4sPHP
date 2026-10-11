@@ -40,22 +40,27 @@
         <section class="section" id="esercizi">
             <div class="section-heading">
                 <div><p class="eyebrow">Raccolta</p><h2>I miei esercizi</h2></div>
-                <span class="count"><span id="project-count">03</span> progetti</span>
+                <span class="count"><span id="project-count">04</span> progetti</span>
             </div>
             <div class="project-grid">
-                <a class="project-card" href="Es.01-table/table.php" target="_blank" rel="noopener">
+                <a class="project-card" href="Es.01a-table/table.php" target="_blank" rel="noopener">
                     <span class="project-icon purple">▦</span>
-                    <span class="project-title">Es.01 - Tabella</span>
+                    <span class="project-title">Es.01a - Tabella</span>
                     <span class="card-arrow" aria-hidden="true">↗</span>
                 </a>
-                <a class="project-card" href="Es.02-greetings/greetings.php" target="_blank" rel="noopener">
+                <a class="project-card" href="Es.01b-greetings/greetings.php" target="_blank" rel="noopener">
                     <span class="project-icon orange">✳</span>
-                    <span class="project-title">Es.02 - Greetings</span>
+                    <span class="project-title">Es.01b - Greetings</span>
                     <span class="card-arrow" aria-hidden="true">↗</span>
                 </a>
-                <a class="project-card" href="Es.03-triangle/triangle.php" target="_blank" rel="noopener">
+                <a class="project-card" href="Es.01c-triangle/triangle.php" target="_blank" rel="noopener">
                     <span class="project-icon green">△</span>
-                    <span class="project-title">Es.03 - Triangle</span>
+                    <span class="project-title">Es.01c - Triangle</span>
+                    <span class="card-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="project-card" href="Es.02a-access/index.php" target="_blank" rel="noopener">
+                    <span class="project-icon purple">🔒</span>
+                    <span class="project-title">ES02 A - Accesso a pagina riservata</span>
                     <span class="card-arrow" aria-hidden="true">↗</span>
                 </a>
             </div>
