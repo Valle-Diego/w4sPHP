@@ -58,8 +58,17 @@ h1 {
 
 .table-scroll { 
     overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
     padding-bottom: 5px; 
 }
+
+.table-scroll:focus-visible {
+    outline: 2px solid var(--accent-light);
+    outline-offset: 3px;
+}
+
+.scroll-hint { display: none; }
 
 table { 
     width: 100%;
@@ -90,6 +99,7 @@ td:hover {
     body { padding: 20px 10px; }
     .page-card { padding: 24px 16px; }
     .back-link { margin-bottom: 30px; }
+    .scroll-hint { display: block; margin: -12px 0 10px; color: var(--muted); font-size: 12px; }
     table { 
         min-width: 540px; 
         border-spacing: 3px; 
