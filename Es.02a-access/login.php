@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verifica accesso</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Verifica accesso</h1>
-    <?php
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $username = $_POST['username'];
-        $password = $_POST['password'];
+    <main class="page-card">
+        <a class="back-link" href="../index.html">← Torna al PHP Lab</a>
+        <p class="eyebrow">ES02 A · PHP Lab</p>
+        <h1>Verifica accesso</h1>
+        <section class="access-result <?php
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                $username = $_POST['username'];
+                $password = $_POST['password'];
 
-        if ($username == "admin" && $password == "123") {
-            echo "<h2>Benvenuto $username</h2>";
-            echo "<p>Nell'area riservata del sito!</p>";
-        } else {
-            echo "<h2>Accesso negato</h2>";
-            echo "<p>Nome utente o password sbagliati.</p>";
-        }
-    }
-    ?>
-    <p><a href="index.php">Torna al login</a></p>
+                if ($username == "admin" && $password == "123") {
+                    echo "success\">";
+                    echo "<h2>Benvenuto $username</h2>";
+                    echo "<p>Nell'area riservata del sito!</p>";
+                } else {
+                    echo "error\">";
+                    echo "<h2>Accesso negato</h2>";
+                    echo "<p>Nome utente o password sbagliati.</p>";
+                }
+            }
+        ?></section>
+        <p><a class="back-link" href="index.php">Torna al login</a></p>
+    </main>
 </body>
 </html>
