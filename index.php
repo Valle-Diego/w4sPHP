@@ -45,7 +45,7 @@
             <div class="project-grid">
                 <a class="project-card" href="Es.01a-table/" target="_blank" rel="noopener">
                     <span class="project-icon purple">▦</span>
-                    <span class="project-title">Es.01a - Tabella</span>
+                    <span class="project-title">Es.01a - Table</span>
                     <span class="card-arrow" aria-hidden="true">↗</span>
                 </a>
                 <a class="project-card" href="Es.01b-greetings/" target="_blank" rel="noopener">
@@ -60,7 +60,7 @@
                 </a>
                 <a class="project-card" href="Es.02a-access/" target="_blank" rel="noopener">
                     <span class="project-icon purple">🔒</span>
-                    <span class="project-title">ES02 A - Accesso a pagina riservata</span>
+                    <span class="project-title">Es.02a - Accesso a pagina riservata</span>
                     <span class="card-arrow" aria-hidden="true">↗</span>
                 </a>
             </div>
