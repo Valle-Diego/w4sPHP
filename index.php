@@ -43,22 +43,22 @@
                 <span class="count"><span id="project-count">04</span> progetti</span>
             </div>
             <div class="project-grid">
-                <a class="project-card" href="Es.01a-table/table.php" target="_blank" rel="noopener">
+                <a class="project-card" href="Es.01a-table/" target="_blank" rel="noopener">
                     <span class="project-icon purple">▦</span>
                     <span class="project-title">Es.01a - Tabella</span>
                     <span class="card-arrow" aria-hidden="true">↗</span>
                 </a>
-                <a class="project-card" href="Es.01b-greetings/greetings.php" target="_blank" rel="noopener">
+                <a class="project-card" href="Es.01b-greetings/" target="_blank" rel="noopener">
                     <span class="project-icon orange">✳</span>
                     <span class="project-title">Es.01b - Greetings</span>
                     <span class="card-arrow" aria-hidden="true">↗</span>
                 </a>
-                <a class="project-card" href="Es.01c-triangle/triangle.php" target="_blank" rel="noopener">
+                <a class="project-card" href="Es.01c-triangle/" target="_blank" rel="noopener">
                     <span class="project-icon green">△</span>
                     <span class="project-title">Es.01c - Triangle</span>
                     <span class="card-arrow" aria-hidden="true">↗</span>
                 </a>
-                <a class="project-card" href="Es.02a-access/index.php" target="_blank" rel="noopener">
+                <a class="project-card" href="Es.02a-access/" target="_blank" rel="noopener">
                     <span class="project-icon purple">🔒</span>
                     <span class="project-title">ES02 A - Accesso a pagina riservata</span>
                     <span class="card-arrow" aria-hidden="true">↗</span>
