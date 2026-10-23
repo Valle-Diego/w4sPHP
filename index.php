@@ -1,3 +1,7 @@
+<?php
+$basePath = rtrim(dirname($_SERVER['SCRIPT_NAME'] ?? '/'), '/');
+$basePath = $basePath === '' ? '/' : $basePath . '/';
+?>
 <!doctype html>
 <html lang="it">
 <head>
@@ -5,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#10151d">
     <title>PHP Lab | Diego Valle</title>
+    <base href="<?= htmlspecialchars($basePath, ENT_QUOTES, 'UTF-8') ?>">
     <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
